@@ -32,6 +32,5 @@ int guessNumber(int guessNum) {
             printf("\n\033[0;92mNo. of Guesses: %i", randomNum);
             printf("\n\033[0;91mGuessed numbers are: %i\033[0;97m", guessNum);
         }
-        getchar() != '\0';
     }
 }

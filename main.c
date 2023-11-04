@@ -12,12 +12,11 @@ int main() {
 
 int guessNumber(int guessNum) {
     for(int i = 0; i < 3; i++) printf("\033[0;92m\033[1m=");
-    printf("\033[0;92m\033[1m Guess the number between 1-100 \033[0;97m");
+    printf("\n\n\033[0;94m\033[1m Guess the number between 1-100 \033[0;97m");
     for(int i = 0; i < 3; i++) printf("\033[0;92m\033[1m=\033[0;97m");
     while(1) {
         srand(time(NULL));
         int randomNum = rand() % 100 + 1;
-        printf("\n\nJawaban: %d", randomNum);
         printf("\nGuess the number: ");
         scanf("%i", &guessNum);
         if(guessNum >= randomNum) {

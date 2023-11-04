@@ -11,7 +11,7 @@ int main() {
 }
 
 int guessNumber(int guessNum) {
-    puts("\n\n")
+    puts("\n\n");
     for(int i = 0; i < 3; i++) printf("\033[0;33m\033[1m=");
     printf("\033[0;33m\033[1m Guess the number between 1-100 \033[0;97m");
     for(int i = 0; i < 3; i++) printf("\033[0;33m\033[1m=\033[0;97m");

@@ -11,14 +11,14 @@ int main() {
 }
 
 int guessNumber(int guessNum) {
-    puts("\n\n");
+    puts("\n");
     for(int i = 0; i < 3; i++) printf("\033[0;33m\033[1m=");
     printf("\033[0;33m\033[1m Guess the number between 1-100 \033[0;97m");
     for(int i = 0; i < 3; i++) printf("\033[0;33m\033[1m=\033[0;97m");
     while(1) {
         srand(time(NULL));
         int randomNum = rand() % 100 + 1;
-        printf("\nGuess the number: ");
+        printf("\n\nGuess the number: ");
         scanf("%i", &guessNum);
         if(guessNum >= randomNum) {
             if(randomNum == guessNum) {
